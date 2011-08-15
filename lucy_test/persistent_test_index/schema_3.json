@@ -1,0 +1,40 @@
+{
+   "_class" : "Lucy::Test::USConSchema",
+   "analyzers" : [
+      null,
+      {
+         "_class" : "Lucy::Analysis::PolyAnalyzer",
+         "analyzers" : [
+            {
+               "_class" : "Lucy::Analysis::CaseFolder"
+            },
+            {
+               "_class" : "Lucy::Analysis::RegexTokenizer",
+               "pattern" : "\\w+(?:['\\x{2019}]\\w+)*"
+            },
+            {
+               "_class" : "Lucy::Analysis::SnowballStemmer",
+               "language" : "en"
+            }
+         ]
+      }
+   ],
+   "fields" : {
+      "category" : {
+         "type" : "string"
+      },
+      "content" : {
+         "analyzer" : "1",
+         "highlightable" : "1",
+         "type" : "fulltext"
+      },
+      "title" : {
+         "analyzer" : "1",
+         "type" : "fulltext"
+      },
+      "url" : {
+         "indexed" : "0",
+         "type" : "string"
+      }
+   }
+}

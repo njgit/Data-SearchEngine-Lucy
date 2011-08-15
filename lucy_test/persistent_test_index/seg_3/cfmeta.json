@@ -1,0 +1,41 @@
+{
+   "files" : {
+      "documents.dat" : {
+         "length" : "358607",
+         "offset" : "0"
+      },
+      "documents.ix" : {
+         "length" : "88448",
+         "offset" : "358608"
+      },
+      "highlight.dat" : {
+         "length" : "541429",
+         "offset" : "447056"
+      },
+      "highlight.ix" : {
+         "length" : "88448",
+         "offset" : "988488"
+      },
+      "lexicon-3.dat" : {
+         "length" : "207849",
+         "offset" : "1076936"
+      },
+      "lexicon-3.ix" : {
+         "length" : "2759",
+         "offset" : "1284792"
+      },
+      "lexicon-3.ixix" : {
+         "length" : "1272",
+         "offset" : "1287552"
+      },
+      "postings-3.dat" : {
+         "length" : "98227",
+         "offset" : "1288824"
+      },
+      "postings.skip" : {
+         "length" : "141",
+         "offset" : "1387056"
+      }
+   },
+   "format" : "2"
+}
